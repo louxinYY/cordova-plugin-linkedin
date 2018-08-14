@@ -40,7 +40,7 @@ public class LinkedIn extends CordovaPlugin {
     private Context context;
     private APIHelper apiHelper;
 
-    private final String API_PATH = "https://api.linkedin.com/v1/";
+    private final String API_PATH = "https://api.linkedin.com/v1/people/";
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {

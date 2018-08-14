@@ -10,7 +10,7 @@
 
 @implementation LinkedIn
 
-NSString* const API_URL = @"https://api.linkedin.com/v1/";
+NSString* const API_URL = @"https://api.linkedin.com/v1/people/";
 
 // convenience method to handle errors on most of the LinkedIn SDK methods
 - (void (^)(LISDKAPIError*)) getError:(CDVInvokedUrlCommand*)command
