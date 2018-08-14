@@ -99,10 +99,10 @@ cordova.plugins.LinkedIn.login(scopes, true, function() {
       code: 'anyone'
     }
    content: {
-     title: title,
-            description: description,
-    'submitted-url': link
-          }
+     title: 'title',
+     description: 'description',
+    'submitted-url': 'http://www.google.com'
+    }
 };
   cordova.plugins.LinkedIn.postRequest('~/shares', payload, onSuccess, onError);
 
