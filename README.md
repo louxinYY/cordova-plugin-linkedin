@@ -98,12 +98,15 @@ cordova.plugins.LinkedIn.login(scopes, true, function() {
     visibility: {
       code: 'anyone'
     }
-  };
+   content: {
+     title: title,
+            description: description,
+    'submitted-url': link
+          }
+};
   cordova.plugins.LinkedIn.postRequest('~/shares', payload, onSuccess, onError);
 
-}, onError);
-
-
+}, onError)
 // check for existing session
 cordova.plugins.LinkedIn.getActiveSession(function(session) {
   if (session) {
